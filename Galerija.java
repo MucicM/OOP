@@ -49,7 +49,7 @@ public class Galerija extends JFrame {
             url.setText("");
             imgabel.setIcon(new ImageIcon());
             //add all the files from the array to my list
-            if (allfile.length!=0){
+            if (allfiles!= null && allfile.length!=0){
                 images = Arrays.asList(allfiles);
 
                 //setting the first image
