@@ -49,7 +49,7 @@ public class Galerija extends JFrame {
             url.setText("");
             imgabel.setIcon(new ImageIcon());
             //add all the files from the array to my list
-            if (allfiles!= null && allfile.length!=0){
+            if (allfiles!=null && allfiles.length!=0){
                 images = Arrays.asList(allfiles);
 
                 //setting the first image
@@ -80,7 +80,6 @@ public class Galerija extends JFrame {
                 }
                 imgabel.setIcon(img);
             }
-
         });
 
         next.addActionListener(e -> {
@@ -102,12 +101,10 @@ public class Galerija extends JFrame {
                 }
                 imgabel.setIcon(img);
             }
-
         });
     }
 
     //returns dimension for resizing images so they keep their original aspect ratio
-
     private static Dimension newsize( ImageIcon img, JLabel cont ) {
         int original_width = img.getIconWidth();
         int original_height = img.getIconHeight();
@@ -125,10 +122,8 @@ public class Galerija extends JFrame {
             new_height = max_height;
             new_width = (new_height * original_width) / original_height;
         }
-
         return new Dimension(new_width, new_height);
     }
-
 
     public static void main( String[] args ) {
 
@@ -137,5 +132,4 @@ public class Galerija extends JFrame {
             f1.setVisible(true);
         });
     }
-
 }
