@@ -47,6 +47,7 @@ public class Galerija extends JFrame {
             File[] allfiles = folder.listFiles(pathname -> pathname.getName().endsWith("jpg") || pathname.getName().endsWith("png") || pathname.getName().endsWith("gif"));
             //erasing text field
             url.setText("");
+            imgabel.setIcon(new ImageIcon());
             //add all the files from the array to my list
             if (allfile.length!=0){
                 images = Arrays.asList(allfiles);
