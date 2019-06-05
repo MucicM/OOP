@@ -48,7 +48,7 @@ public class Galerija extends JFrame {
             //erasing text field
             url.setText("");
             //add all the files from the array to my list
-            if (allfiles != null){
+            if (allfile.length!=0){
                 images = Arrays.asList(allfiles);
 
                 //setting the first image
